@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
+.main-login-page {
+  width: 100%;
+  max-width: 506px;
+  height: 100%;
+  max-height: 573px;
+  background: rgba(217, 217, 217, 0.24);
+  box-shadow: 2px 2px 10px 1px rgba(106, 152, 60, 0.25);
+  border-radius: 10px;
+  padding: 83px 63px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-login {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #6A983C;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-login-bottom {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+
+}
+
+.input-email {
+  box-sizing: border-box;
+  margin-top: 32px;
+  background: rgba(217, 217, 217, 0.1);
+  border: 1px solid #6A983C;
+  border-radius: 10px;
+  padding: 19px 0 19px 16px;
+}
+
+.input-password {
+  box-sizing: border-box;
+  margin-top: 5px;
+  background: rgba(217, 217, 217, 0.1);
+  border: 1px solid #6A983C;
+  border-radius: 10px;
+  padding: 19px 0 19px 16px;
+}
+
+.text-forgot {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  color: #000000;
+}
+
+.btn-login {
+  width: 100%;
+  height: 46px;
+  background: #6A983C;
+  border-radius: 10px;
+  padding: 12px 0;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  border: none;
+}
+@media only screen and (max-width: 1440px) {
+  .main-login-page {
+    width: 100%;
+    max-width: 506px;
+    height: 573px;
+    padding: 83px 63px;
+  }
+  .input-email {
+    padding: 10px;
+  }
+  .input-password {
+    padding: 10px;
+  }
+  ::placeholder {
+    font-size: medium;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 1024px) {
+  .main-login-page {
+    width: 100%;
+    max-width: 450px;
+    height: 500px;
+    padding: 50px 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .input-email {
+    padding: 10px;
+  }
+  .input-password {
+    padding: 10px;
+  }
+  ::placeholder {
+    font-size: medium;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-login-page {
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 40px;
+  }
+  .input-email {
+    padding: 9px;
+  }
+  .input-password {
+    padding: 9px;
+  }
+  .btn-login {
+    padding: 9px;
+    height: 45px;
+    font-size: 14px; 
+  }
+  ::placeholder {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 526px) {
+  .main-login-page {
+    width: 100%;
+    max-width: 320px;
+    padding: 50px 33px;
+  }
+  .input-email {
+    padding: 6px;
+  }
+  .input-password {
+    padding: 6px;
+  }
+  .btn-login {
+    padding: 6px;
+    height: 35px;
+    font-size: 14px; 
+  }
+  ::placeholder {
+    font-size: small;
+  }
+}
+@media only screen and (max-width:425px) {
+  .main-login-page {
+    width: 100%;
+    max-width: 300px;
+    padding: 50px 30px;
+  }
+  .text-login {
+    font-size: 25px;
+  }
+  .text-login-bottom {
+    font-size: 10px;
+  }
+  .input-email {
+    padding: 6px;
+  }
+  .input-password {
+    padding: 6px;
+  }
+  .btn-login {
+    padding: 6px;
+    height: 35px;
+    font-size: 14px; 
+  }
+  ::placeholder {
+    font-size: small;
+  }
+}
+@media only screen and (max-width:320px) {
+  .main-login-page {
+    width: 100%;
+    max-width: 250px;
+    padding: 50px 20px;
+  }
+  .text-login {
+    font-size: 25px;
+  }
+  .text-login-bottom {
+    font-size: 10px;
+  }
+  .input-email {
+    padding: 6px;
+  }
+  ::placeholder {
+    font-size: small;
+  }
+  .input-password {
+    padding: 6px;
+  }
+  .btn-login {
+    padding: 6px;
+    height: 35px;
+    font-size: 14px; 
   }
 }
